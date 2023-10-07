@@ -48,6 +48,8 @@
 }
 
 .profileLinks {
+  display: flex;
+  justify-content: space-evenly;
   background-color: aqua;
   height: 10%;
 }

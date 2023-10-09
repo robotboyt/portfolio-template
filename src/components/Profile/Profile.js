@@ -7,6 +7,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import PlaceIcon from "@mui/icons-material/Place";
+import ApartmentIcon from "@mui/icons-material/Apartment";
 
 const Profile = () => {
   let links = [
@@ -17,7 +18,7 @@ const Profile = () => {
     { icon: GitHubIcon, info: "link", id: 1 },
     { icon: AlternateEmailIcon, info: "link", id: 2 },
     { icon: ContactPhoneIcon, info: "link", id: 3 },
-    { icon: PlaceIcon, info: "link", id: 4 },
+    // { icon: PlaceIcon, info: "link", id: 4 },
   ];
 
   let skills = [
@@ -41,6 +42,17 @@ const Profile = () => {
     { leng: "English", level: "B2" },
     { leng: "Ukrainian", level: "C2" },
     { leng: "Russian", level: "C2" },
+  ];
+
+  let expirience = [
+    {
+      companyName: "Pinta Web-Were",
+      position: "Rect Developer",
+      startDate: "03/2023",
+      finishDate: "Present",
+      tasks: "make sites",
+      typeOfWork: "Hybrid",
+    },
   ];
 
   return (
@@ -80,6 +92,32 @@ const Profile = () => {
               <span>{item.level}</span>
             </div>
           ))}
+        </div>
+      </div>
+      <div className={styles.profileSummary}>
+        <div className={styles.profileExpirience}>
+          <h2>Expirience:</h2>
+          <div>
+            {expirience.map((item) => (
+              <div className={styles.expirienceItem}>
+                <div className={styles.company}>
+                  <h4>
+                    <SvgIcon component={ApartmentIcon} />
+                    {item.companyName}
+                  </h4>
+                  <span>{item.position}</span>
+                </div>
+                <div className={styles.timePeriod}>
+                  <span>
+                    {item.startDate} / {item.finishDate}
+                  </span>
+                </div>
+                <div className={styles.tasks}>
+                  <span>{item.tasks}</span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

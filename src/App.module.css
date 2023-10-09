@@ -9,11 +9,13 @@
   height: 700px;
   background-color: #183d3d;
   border-radius: 10px;
+  display: flex;
 }
 
 .profileBlock {
   border-radius: 10px;
   width: 400px;
+
   border-right: 1px solid black;
   height: 100%;
 }
@@ -80,9 +82,11 @@
   margin: 10px;
   border-radius: 10px;
   transition: 0.3s ease-in-out;
+  cursor: default;
 }
 
 .profileSkills span:hover {
+  margin-top: 2px;
   background-color: blueviolet;
   transition: 0.3s ease-in-out;
 }
@@ -109,4 +113,45 @@
 .language span:last-child {
   display: flex;
   justify-content: flex-end;
+}
+
+.profileSummary {
+  width: 800px;
+  background-color: azure;
+}
+
+.profileExpirience {
+  background-color: aqua;
+  height: 40%;
+}
+
+.profileExpirience h2 {
+  background-color: green;
+  height: 10%;
+}
+
+.expirienceItem {
+  background-color: blue;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.expirienceItem h4 {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.company {
+  display: flex;
+  justify-content: space-between;
+  background-color: yellow;
+}
+
+.company span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

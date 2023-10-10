@@ -4,6 +4,14 @@
   align-items: center;
 }
 
+.navbar {
+  position: absolute;
+  width: auto;
+  height: 30px;
+  margin-bottom: 730px;
+  background-color: white;
+}
+
 .profile {
   width: 1200px;
   height: 700px;
@@ -117,25 +125,22 @@
 
 .profileSummary {
   width: 800px;
-  background-color: azure;
 }
 
 .profileExpirience {
-  background-color: aqua;
-  height: 40%;
+  height: 100%;
 }
 
 .profileExpirience h2 {
-  background-color: green;
-  height: 10%;
+  height: 5%;
 }
 
 .expirienceItem {
-  background-color: blue;
-  width: 100%;
+  width: 90%;
   height: 200px;
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid black;
 }
 
 .expirienceItem h4 {
@@ -147,11 +152,30 @@
 .company {
   display: flex;
   justify-content: space-between;
-  background-color: yellow;
 }
 
 .company span {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.tasks ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tasks ul li {
+  width: 90%;
+  height: auto;
+  margin-top: 5px;
+  align-items: center;
+  /* margin-left: 20px; */
+}
+
+.expirience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

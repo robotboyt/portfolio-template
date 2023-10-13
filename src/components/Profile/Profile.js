@@ -10,7 +10,7 @@ const Profile = () => {
   return (
     <>
       <div className={styles.navbar}>
-        <Link to="/">Expirience</Link>
+        <Link to="/">Expiriencee</Link>
         <Link to="/education">Education</Link>
         <Link to="/about-me">About Me</Link>
       </div>

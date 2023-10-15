@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../App.module.css";
-import avatar from "../../assets/avatar.jpg";
+import avatar from "../../assets/avatar.png";
 // import { SvgIcon } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -12,7 +12,7 @@ const ProfileBlock = ({ SvgIcon }) => {
   let links = [
     {
       icon: LinkedInIcon,
-      info: "https://www.linkedin.com/in/mark-buchynskyi-b0baa8226/",
+      info: "link",
     },
     { icon: GitHubIcon, info: "link", id: 1 },
     { icon: AlternateEmailIcon, info: "link", id: 2 },
@@ -50,7 +50,7 @@ const ProfileBlock = ({ SvgIcon }) => {
         </div>
         <div className={styles.profileName}>
           <div className={styles.name}>
-            <h2>Mark Buchynskyi</h2>
+            <h2>David Martinez</h2>
           </div>
         </div>
         <div className={styles.profileLinks}>
@@ -63,12 +63,12 @@ const ProfileBlock = ({ SvgIcon }) => {
       </div>
       <div className={styles.profileSkills}>
         {skills.map((item) => (
-          <span>{item}</span>
+          <span key={item.toString()}>{item}</span>
         ))}
       </div>
       <div className={styles.profileLanguage}>
         {language.map((item) => (
-          <div className={styles.language}>
+          <div className={styles.language} key={item.level.toString()}>
             <span>{item.leng}</span>
             <span>{item.level}</span>
           </div>

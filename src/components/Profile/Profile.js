@@ -5,6 +5,7 @@ import ProfileBlock from "../ProfileBlock/ProfileBlock";
 import ProfileExpirience from "../ProfileExpirience/ProfileExpirience";
 import { Link, Route, Routes } from "react-router-dom";
 import ProfileEducation from "../ProfileEducation/ProfileEducation";
+import ProfileAboutMe from "../ProfileAboutMe/ProfileAboutMe";
 
 const Profile = () => {
   return (
@@ -12,7 +13,7 @@ const Profile = () => {
       <div className={styles.navbar}>
         <Link to="/">Expiriencee</Link>
         <Link to="/education">Education</Link>
-        <Link to="/about-me">About Me</Link>
+        <Link to="/aboutme">About Me</Link>
       </div>
       <div className={styles.profile}>
         <ProfileBlock SvgIcon={SvgIcon} />
@@ -20,6 +21,7 @@ const Profile = () => {
           <Routes>
             <Route path="/" element={<ProfileExpirience SvgIcon={SvgIcon} />} />
             <Route path="/education" element={<ProfileEducation />} />
+            <Route path="/aboutme" element={<ProfileAboutMe />} />
           </Routes>
         </div>
       </div>
